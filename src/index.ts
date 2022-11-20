@@ -6,7 +6,7 @@ import { startStandaloneServer } from '@apollo/server/standalone';
 // your data.
 const typeDefs = `#graphql
   type Book {
-    title: String
+    title: String! # can"t return null
     author: String
   }
   type Query {
